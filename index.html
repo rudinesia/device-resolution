@@ -1,0 +1,52 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Device Resolution Check</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		.card-text{
+			font-size: larger;
+		}
+		.card-text span{
+			font-weight: 700;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-8 offset-md-2">
+				<div class="card mt-5">
+					<div class="card-body">
+						<h1 class="card-title mb-4">
+							Your device resolution is
+						</h1>
+						<p class="card-text">
+							Width: <span id="width"></span>
+						</p>
+						<p class="card-text">
+							Height: <span id="height"></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<script>
+		// Detect innerWidth of body
+		var width = $("body").innerWidth();
+
+		// Detect innerHeight of body
+		var height = $("body").innerHeight();
+
+		// Show innerWidth
+		$("#width").html(width);
+		
+		// Show innerHeight
+		$("#height").html(height);
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+</html>
