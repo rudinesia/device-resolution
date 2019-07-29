@@ -1,0 +1,1 @@
+repository ini digunakan untuk mendeteksi ukuran Width dan Height device, lewat browser dengan bantuan tag <body>
