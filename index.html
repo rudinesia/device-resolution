@@ -47,6 +47,21 @@
 		
 		// Show innerHeight
 		$("#height").html(height);
+
+		// detect width & height on window resize
+		$(window).resize(function(){
+			// Detect innerWidth of body
+			var width = $("body").innerWidth();
+
+			// Detect innerHeight of body
+			var height = $("body").innerHeight();
+
+			// Show innerWidth
+			$("#width").html(width);
+			
+			// Show innerHeight
+			$("#height").html(height);
+		});
 	</script>
 </body>
 </html>
